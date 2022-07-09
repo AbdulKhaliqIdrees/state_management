@@ -19,7 +19,7 @@ class ProductScreen extends StatelessWidget {
               ElevatedButton.icon(
                 onPressed: () {},
                 icon: Icon(Icons.shopping_cart),
-                label:GetX(builder: ((controller) {
+                label:GetX<Productcontroller>(builder: ((controller) {
                   return  Text(productcontroller.count.toString());
                 }))
               ),
@@ -123,7 +123,7 @@ class ProductScreen extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-         GetX(builder: ((controller) {
+         GetX<Productcontroller>(builder: ((controller) {
             return Text(
             "Total Amount:${productcontroller.totalprice}",
             style: TextStyle(
