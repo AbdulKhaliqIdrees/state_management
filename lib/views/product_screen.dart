@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:state_management/controllers/product_controllers.dart';
 
 class ProductScreen extends StatelessWidget {
+  
   final productcontroller = Get.put(Productcontroller());
 
 
